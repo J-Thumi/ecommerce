@@ -1,0 +1,80 @@
+:root{
+--primary-background:#1f2032 ;
+}
+
+.videos {
+    display: grid; 
+    gap: 1rem;
+    padding: 1.25rem 0 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 2%;
+  }
+  h1{
+    margin-left: 50%;
+  }
+  .videos .card {
+    text-decoration: none;
+    background-color:#fff;
+    border-radius: 8px;
+  }
+  
+  .videos .card .thumbnailContainer {
+    position: relative;
+  }
+  
+  .videos .card .thumbnail {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    aspect-ratio: 16/16;
+    background: var(--light-white-color);
+  }
+  
+  .videos .card .duration {
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.8rem;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+    background: var(--overlay-dark-color);
+    
+  }
+  
+  .videos .card .info {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+  }
+  
+  .videos .card .icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  
+  .videos .card .title {
+    font-size: 1rem;
+    color: var(--black-color);
+    font-weight: 600;
+    line-height: 1.375;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  
+  .videos .card:hover .title {
+    color: var(--primary-color);
+  }
+  
+  .videos .card p {
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+  }
+  
+  .videos .card .channel {
+    margin: 0.25rem 0 0.15rem;
+  }
+  
